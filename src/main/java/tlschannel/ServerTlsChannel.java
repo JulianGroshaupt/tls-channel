@@ -88,6 +88,8 @@ public class ServerTlsChannel implements TlsChannel {
   private static SSLEngine defaultSSLEngineFactory(SSLContext sslContext) {
     SSLEngine engine = sslContext.createSSLEngine();
     engine.setUseClientMode(false);
+    String[] suites = { "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" };
+	engine.setEnabledCipherSuites(suites);
     return engine;
   }
 
