@@ -6,6 +6,7 @@ In other words, a simple library that allows the programmer to implement TLS usi
 
 > changes to [marianobarrios/tls-channel](https://github.com/marianobarrios/tls-channel/)
 > * restricted ClientTlsChannel & ServerTlsChannel Cipher Suites to "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"
+> * enabled client auth in ServerTlsChannel
 
 ### Main features
 
