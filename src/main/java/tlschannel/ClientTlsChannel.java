@@ -53,7 +53,7 @@ public class ClientTlsChannel implements TlsChannel {
     SSLEngine engine = sslContext.createSSLEngine();
     engine.setUseClientMode(true);
     String[] suites = { "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384" };
-	engine.setEnabledCipherSuites(suites);
+    engine.setEnabledCipherSuites(suites);
     return engine;
   }
 
